@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <link href=styles.css rel=stylesheet>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <h1>Table 1. CSS Specificity</h1>
+  </header>
+  <main>
+    <table>
+      <thead>
+        <tr>
+        <th>Element</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Specificity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td class="element">#ID</td>
+        <td>ID2</td>
+        <td>The identifier placed below ID1.</td>
+        <td>The highest (1.)</td>
+        </tr>
+        <tr>
+        <td class="element">#ID</td>
+        <td>ID1</td>
+        <td>The identifier placed above ID2.</td>
+        <td>2.</td>
+        </tr>
+        <tr>
+        <td class="element">element.class</td>
+        <td>eg. h1.special</td>
+        <td>The HTML element + its class.</td>
+        <td>3.</td>
+        </tr>
+        <tr>
+        <td class="element">.class</td>
+        <td>class</td>
+        <td>The HTML class.</td>
+        <td>4.</td>
+        </tr>
+        <tr>
+        <td class="element">tag</td>
+        <td>eg. h1</td>
+        <td>The HTML tag.</td>
+        <td>The lowest (5.)</td>
+        </tr>
+      </tbody>    
+    </table>  
+  </main>  
+</body>
+</html>
